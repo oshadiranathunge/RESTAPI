@@ -26,6 +26,6 @@ app.get('/api/customers',(req,res)=>{
 app.get('/api/customer/:id',(req,res) => {
     const customer = customers.find(c => customer.id === parseInt(req.params.id));
     //if there is no valid customer ID, then diplay an error with the following message
-    if (!customer) res.status(404).send('<h2 style="font-family:calibri;')
+    if (!customer) res.status(404).send('<h2 style="font-family:calibri; color: Light;')
 });
     
