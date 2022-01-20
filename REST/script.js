@@ -27,5 +27,6 @@ app.get('/api/customer/:id',(req,res) => {
     const customer = customers.find(c => customer.id === parseInt(req.params.id));
     //if there is no valid customer ID, then diplay an error with the following message
     if (!customer) res.status(404).send('<h2 style="font-family:calibri; color: Light;"> Could not find </h2> ');
+    res.send(customer);
 });
     
